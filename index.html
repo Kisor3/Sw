@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS -->
+</head>
+<body>
+    <div class="container" id="stage1">
+        <h1>I Love You</h1>
+        <button onclick="nextStage('stage2')">Continue</button>
+    </div>
+
+    <div class="container hidden" id="stage2">
+        <h2>Sachi kya tyo mistakely jhut boleko ho narisauna la</h2>
+        <p>Bolne vaye yes ‘ani nabolne vaye no</p>
+        <button onclick="handleYes()">Yes</button>
+        <button onclick="handleNo()">No</button>
+    </div>
+
+    <div class="container hidden" id="stage3-yes">
+        <h2>Thank you for accepting my apology</h2>
+        <button onclick="nextStage('stage4')">Hunxa</button>
+    </div>
+
+    <div class="container hidden" id="stage4">
+        <h1>I Love You</h1>
+        <button onclick="handleYes1()">Yes</button>
+        <button id="noButton" onclick="handleNo2()">No</button>
+    </div>
+
+    <div class="container hidden" id="stage3-no">
+        <h2>Sorry 😢</h2>
+        <p>Bolana hau kina resako, resaunu huna aba. Yo geet suna la, res kam hunxa ke.</p>
+        <p>Kasailai ne napathau la, byee.</p>
+        <a href="https://youtu.be/vnHTrxV7TMc?feature=shared" target="_blank">Listen to this song</a>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking JavaScript -->
+</body>
+</html>
